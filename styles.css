@@ -1,0 +1,95 @@
+poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.allura-regular {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-color: #ffdbd7;
+    /*filter: brightness(1.1);
+    mix-blend-mode: multiply;*/
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color:#855e6e;
+    padding:0;
+    margin: 0;
+}
+
+nav > ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style:none;
+    padding-left: 16px;
+}
+nav a{ 
+    text-decoration: none;
+    color: #ffb2c1;
+    font-family: Poppins;
+    font-size: x-large;
+    font-weight: 60pxs;
+}
+nav img{
+    height: 30px;
+    width: 30px;
+    padding-left: 1080px;
+    padding-top: 5px;
+}
+.titulo{
+    padding-top: 50px;
+    text-align: center;
+    color:#ffb2c1;
+    font-family: Allura;
+}
+.titulo img{
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+}
+.titulo h1{
+    padding: 0;
+    margin: 0;
+}
+.carrusel{
+    display: grid;
+    list-style: none;
+    gap: 18px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+.carrusel div{
+    background-color: #f7f1e1;
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+.carrusel img{
+    height: 200px;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
+}
+.carrusel h2 {
+    font-family: Poppins;
+    font-size: 17px;
+    text-align: center;
+}
+.carrusel p {
+    font-family: Allura;
+    font-size: 16px;
+    text-align: center;
+}
+.carrusel div:hover{
+    transform: scale(1.2);
+}
