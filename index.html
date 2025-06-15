@@ -20,10 +20,26 @@
             <img src="iconos/Carrito.png" alt="Carrito" class="size-[40px]" />
         </a>
     </nav>
-    <div class="flex flex-col justify-between items-center">
-        <img src="img/Logo.svg" alt="Logo-Empresa" class = "w-5xl">
-        <!---<h1 class="font-[Poppins] text-5xl">Enjoy Tasty Macaron</h1>-->
+
+    <div class="flex justify-center items-center">
+        <div class="
+            size-[600px]
+            bg-[url('/img/Logo.svg')] 
+            bg-contain 
+            bg-center 
+            bg-no-repeat
+            mask-[url('/img/trazo-pincel.png')] 
+            mask-contain 
+            mask-center 
+            mask-no-repeat
+        ">
+        </div>
     </div>
+
+    <!---<div class="flex flex-col justify-between items-center">
+        <img src="img/Logo.svg" alt="Logo-Empresa" class = "w-5xl mask-[url(/img/trazo pincel.avif)] bg-[url(/img/Logo.svg)]">
+        <h1 class="font-[Poppins] text-5xl">Enjoy Tasty Macaron</h1>
+    </div>-->
 
     <!---<main>
         <nav class="flex flex-row justify-between items-center px-4 py-2 bg-gray-100">
@@ -64,157 +80,177 @@
 
         <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 hover:shadow-2xl hover:-translate-y-1">
             <img class="w-full h-48 object-cover" src="img/macaron rosa.jpg" alt="Macarrón de Pétalos de Rosa">
-            <div class="p-6 flex-grow">
-                <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Pétalo</h2>
-                <p class="text-gray-600 text-base">
-                    Delicioso y romántico postre que combina la delicadeza de los pétalos de rosa con la textura crujiente del macarrón.
-                </p>
-            </div>
-            <div class="mt-6">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="font-medium text-gray-700">Cantidad</span>
-                    <div class="flex items-center gap-2">
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
-                        <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
-                    </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                    <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Pétalo</h2>
+                    <p class="text-gray-600 text-base">
+                        Delicioso y romántico postre que combina la delicadeza de los pétalos de rosa con la textura crujiente del macarrón.
+                    </p>
                 </div>
-                <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                <div class="mt-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-medium text-gray-700">Cantidad</span>
+                        <div class="flex items-center gap-2">
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
+                            <input class="w-12 text-center border-gray-300 border rounded-md focus:ring-pink-500 focus:border-pink-500" type="text" value="1" readonly>
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
+                        </div>
+                    </div>
+                    <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">
+                        Agregar al carrito
+                    </button>
+                </div>
             </div>
-        </div>
         </article>
 
         <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 hover:shadow-2xl hover:-translate-y-1">
             <img class="w-full h-48 object-cover" src="img/macaron matcha.jpg" alt="Macarrón de Matcha">
-            <div class="p-6 flex-grow">
-                <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Matcha</h2>
-                <p class="text-gray-600 text-base">
-                    Refrescante postre que combina la intensidad del té matcha con la textura crujiente y el sabor dulce de los macarons.
-                </p>
-            </div>
-            <div class="mt-6">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="font-medium text-gray-700">Cantidad</span>
-                    <div class="flex items-center gap-2">
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
-                        <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
-                    </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                    <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Matcha</h2>
+                    <p class="text-gray-600 text-base">Refrescante postre que combina la intensidad del té matcha con la textura crujiente y el sabor dulce de los macarons.</p>
                 </div>
-                <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                <div class="mt-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-medium text-gray-700">Cantidad</span>
+                        <div class="flex items-center gap-2">
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
+                            <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
+                        </div>
+                    </div>
+                    <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                </div>
             </div>
-        </div>
         </article>
 
         <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 hover:shadow-2xl hover:-translate-y-1">
             <img class="w-full h-48 object-cover" src="img/macaron azul.avif" alt="Macarrón de Mora Azul">
-            <div class="p-6 flex-grow">
-                <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Mora Azul</h2>
-                <p class="text-gray-600 text-base">
-                    Misterioso postre que combina el sabor agridulce de la mora azul con la textura crujiente y dulce de los macarons.
-                </p>
-            </div>
-            <div class="mt-6">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="font-medium text-gray-700">Cantidad</span>
-                    <div class="flex items-center gap-2">
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
-                        <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
-                    </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                    <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Mora Azul</h2>
+                    <p class="text-gray-600 text-base">Misterioso postre que combina el sabor agridulce de la mora azul con la textura crujiente y dulce de los macarons.</p>
                 </div>
-                <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                <div class="mt-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-medium text-gray-700">Cantidad</span>
+                        <div class="flex items-center gap-2">
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
+                            <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
+                        </div>
+                    </div>
+                    <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                </div>
             </div>
-        </div>
         </article>
 
         <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 hover:shadow-2xl hover:-translate-y-1">
             <img class="w-full h-48 object-cover" src="img/macaron morado.jpg" alt="Macarrón de Lavanda">
-            <div class="p-6 flex-grow">
-                <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Lavanda</h2>
-                <p class="text-gray-600 text-base">
-                    Un soñador postre que combina la suavidad y la delicadeza de la lavanda con la textura crujiente y dulce de los macarons.
-                </p>
-            </div>
-            <div class="mt-6">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="font-medium text-gray-700">Cantidad</span>
-                    <div class="flex items-center gap-2">
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
-                        <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
-                    </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                    <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Lavanda</h2>
+                    <p class="text-gray-600 text-base">Un soñador postre que combina la suavidad y la delicadeza de la lavanda con la textura crujiente y dulce de los macarons.</p>
                 </div>
-                <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                <div class="mt-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-medium text-gray-700">Cantidad</span>
+                        <div class="flex items-center gap-2">
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
+                            <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
+                        </div>
+                    </div>
+                    <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                </div>
             </div>
-        </div>
         </article>
 
         <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 hover:shadow-2xl hover:-translate-y-1">
-            <img class="w-full h-48 object-cover" src="img/macaron maracuya.jpg" alt="Macarrón de Maracuyá">
-            <div class="p-6 flex-grow">
-                <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Maracuyá</h2>
-                <p class="text-gray-600 text-base">
-                    Tropical postre que combina la dulzura y el sabor agridulce de la maracuyá con la textura crujiente de los macarons.
-                </p>
-            </div>
-            <div class="mt-6">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="font-medium text-gray-700">Cantidad</span>
-                    <div class="flex items-center gap-2">
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
-                        <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
-                    </div>
+            <img class="w-48 h-48 object-cover mx-auto" src="img/macaron maracuya.png" alt="Macarrón de Maracuyá">
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                    <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Maracuyá</h2>
+                    <p class="text-gray-600 text-base">Tropical postre que combina la dulzura y el sabor agridulce de la maracuyá con la textura crujiente de los macarons.</p>
                 </div>
-                <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                <div class="mt-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-medium text-gray-700">Cantidad</span>
+                        <div class="flex items-center gap-2">
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
+                            <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
+                        </div>
+                    </div>
+                    <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                </div>
             </div>
-        </div>
         </article>
 
         <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 hover:shadow-2xl hover:-translate-y-1">
-            <img class="w-full h-48 object-cover" src="img/macaron choco.jpg" alt="Macarrón de Cacao">
-            <div class="p-6 flex-grow">
-                <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Cacao</h2>
-                <p class="text-gray-600 text-base">
-                    Decadente postre que combina la riqueza e intensidad del chocolate con la textura crujiente y dulce de los macarons.
-                </p>
-            </div>
-            <div class="mt-6">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="font-medium text-gray-700">Cantidad</span>
-                    <div class="flex items-center gap-2">
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
-                        <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
-                    </div>
+            <img class="w-48 h-48 object-cover mx-auto" src="img/macaron choco.png" alt="Macarrón de Chocolate">
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                    <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Chocolate</h2>
+                    <p class="text-gray-600 text-base">Decadente postre que combina la riqueza e intensidad del chocolate con la textura crujiente y dulce de los macarons.</p>
                 </div>
-                <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                <div class="mt-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-medium text-gray-700">Cantidad</span>
+                        <div class="flex items-center gap-2">
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
+                            <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
+                        </div>
+                    </div>
+                    <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                </div>
             </div>
-        </div>
         </article>
 
         <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 hover:shadow-2xl hover:-translate-y-1">
             <img class="w-full h-48 object-cover" src="img/macaron rojo.jpg" alt="Macarrón de Cereza">
-            <div class="p-6 flex-grow">
-                <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Cereza</h2>
-                <p class="text-gray-600 text-base">
-                    Jugoso postre que combina el sabor agridulce de la cereza con la textura crujiente y dulce de los macarons.
-                </p>
-            </div>
-            <div class="mt-6">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="font-medium text-gray-700">Cantidad</span>
-                    <div class="flex items-center gap-2">
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
-                        <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
-                        <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
-                    </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                    <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Cereza</h2>
+                    <p class="text-gray-600 text-base">Jugoso postre que combina el sabor agridulce de la cereza con la textura crujiente y dulce de los macarons.</p>
                 </div>
-                <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                <div class="mt-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-medium text-gray-700">Cantidad</span>
+                        <div class="flex items-center gap-2">
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
+                            <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
+                        </div>
+                    </div>
+                    <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                </div>
             </div>
-        </div>
         </article>
+
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 hover:shadow-2xl hover:-translate-y-1">
+            <img class="w-full h-48 object-cover" src="img/macaron menta.jpg" alt="Macarrón de Menta">
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                    <h2 class="font-bold text-xl mb-2 text-gray-800">Macarrón Menta</h2>
+                    <p class="text-gray-600 text-base">Refrescante postre que combina la frescura e intensidad de la menta con la textura crujiente y dulce de los macarons.</p>
+                </div>
+                <div class="mt-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="font-medium text-gray-700">Cantidad</span>
+                        <div class="flex items-center gap-2">
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">-</button>
+                            <input class="w-12 text-center border-gray-300 border rounded-md" type="text" value="1" readonly>
+                            <button class="bg-gray-200 text-gray-700 rounded-md h-8 w-8 flex items-center justify-center font-bold hover:bg-gray-300 transition">+</button>
+                        </div>
+                    </div>
+                    <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
+                </div>
+            </div>
+        </article>
+
+       <!-- 
 
         <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 hover:shadow-2xl hover:-translate-y-1">
             <img class="w-full h-48 object-cover" src="img/macaron menta.jpg" alt="Macarrón de Menta">
@@ -236,6 +272,6 @@
                 <button class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-300">Agregar al carrito</button>
             </div>
         </div>
-        </article>
+        </article>-->
 </body>
 </html>
